@@ -19,7 +19,7 @@
 > **precondition**: haystack is guaranteed to be in sorted order before running the function
 
 > **algorithm**: find the middle element in the list (choose either middle element if there are two), check if it is the needle. You are done if it is. If it is not, check to see if the needle would be before or after this element. When it comes before, choose the first half of the list. Otherwise choose the second half of the list. Repeat the process of finding a middle element with the more limited range (from the end of the list to the previous middle element) until you either find the needle or are unable to continue splitting the list in half.
-    
+
 **Note**: Use the `compareTo` function to determine the alphabetical order of two Strings. Check the String API for more details.
 
 ### Search Questions
@@ -28,13 +28,13 @@
     1. Shuffle the items, producing a randomish arrangement. Perform a normal Search algorithm, once for an item that exists in the group, and once for one that does not.
     2. Arrange the items in ascending order. Perform a BinarySearch on the group, once for an item that exists in the group, and once for one that does not.
     3. What do you notice about the two algorithms?
-    
+
 2. What does it mean for an algorithm to be efficient? Which algorithm, search or binary search is more efficient? Why?
 3. For the list: `["apple", "banana", "banana", "cherry", "lemon", "lime", "mango", "orange", "pear", "strawberry", "watermelon"]`
     1. Describe, step by step, how each searching algorithm would process the list when searching for "blueberry"
     2. How many members of the list did `search` access (look at) when looking for blueberry? How many members did `binarySearch` access?
     3. If the list of fruits had been 1000 items long instead, how would your answer to question ii change?
-  
+
 **Implement the two search algorithms**
 
 ## Sorting
