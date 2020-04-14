@@ -23,8 +23,19 @@ An algorithm is efficient if it doesn't have to run very many things or run too 
       2. Shuffle again, and perform an InsertionSort on the list.
       3. Shuffle again, and perform a BubbleSort on the list.
       4. What do you notice about the algorithms?
+      selection was the fastest, then bubble, then insertion; insertion seemed highly inefficient, while selection was clearly the most efficient
   2. These algorithms are typically called `comparison sorts` because they rely on comparing two elements at a time. For each algorithm:
       1. How many comparisons would it perform for a list of 10 items that were already in order?
+      selection- 55
+      insertion- 10
+      bubble- 9
       2. How many comparisons does it perform in the worst possible pre-arrangement of 10 items?
+      selection- 55
+      insertion- 45
+      bubble- 90
       3. How many comparisons would you expect it to perform, approximately, on 10 random items? 100? 1000?
+      selection- 55
+      insertion- 27ish
+      bubble- 50ish
   3. If you were searching for an element in a random list, would it be reasonable to use one of these algorithms to sort the list first and use binarySearch, or would you be better off using a normal search? Why or why not?
+binary search would be more efficient if searching in a long list for a random element, because it wouldn't need to evaluate the majority of elements before finding the desired one
